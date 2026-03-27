@@ -12,7 +12,6 @@ resource "aws_db_instance" "this" {
   db_name                      = var.db_name
   username                     = var.username
   engine                       = var.engine
-  engine_version               = var.engine_version
   instance_class               = var.instance_class
   allocated_storage            = var.allocated_storage
   max_allocated_storage        = var.max_allocated_storage

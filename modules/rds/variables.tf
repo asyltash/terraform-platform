@@ -15,10 +15,6 @@ variable "engine" {
   default = "postgres"
 }
 
-variable "engine_version" {
-  type    = string
-  default = "16.3"
-}
 
 variable "instance_class" {
   type = string
