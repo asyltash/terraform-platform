@@ -7,7 +7,11 @@ variable "description" {
 }
 
 variable "secret_string" {
+<<<<<<< HEAD
   type      = string
+=======
+  type = string
+>>>>>>> origin/main
   sensitive = true
 }
 

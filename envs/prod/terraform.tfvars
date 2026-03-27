@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 aws_region   = "us-east-2"
+=======
+aws_region  = "us-east-2"
+>>>>>>> origin/main
 project_name = "terraform-platform"
 environment  = "prod"
 owner        = "devops"

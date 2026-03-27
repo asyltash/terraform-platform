@@ -155,6 +155,7 @@ module "app" {
 module "rds" {
   source = "../../modules/rds"
 
+<<<<<<< HEAD
   identifier          = "${local.name_prefix}-postgres"
   db_name             = var.db_name
   username            = var.db_username
@@ -165,6 +166,18 @@ module "rds" {
   deletion_protection = var.db_deletion_protection
   skip_final_snapshot = var.db_skip_final_snapshot
   common_tags         = local.common_tags
+=======
+  identifier              = "${local.name_prefix}-postgres"
+  db_name                 = var.db_name
+  username                = var.db_username
+  instance_class          = var.db_instance_class
+  subnet_ids              = module.network.private_subnet_ids
+  security_group_ids      = [aws_security_group.db.id]
+  multi_az                = var.db_multi_az
+  deletion_protection     = var.db_deletion_protection
+  skip_final_snapshot     = var.db_skip_final_snapshot
+  common_tags             = local.common_tags
+>>>>>>> origin/main
 }
 
 module "app_table" {

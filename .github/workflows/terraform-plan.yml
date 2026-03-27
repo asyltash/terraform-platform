@@ -1,7 +1,11 @@
 name: Terraform Plan
 
 on:
+<<<<<<< HEAD
   pull_request: 
+=======
+  pull_request:
+>>>>>>> origin/main
     branches:
       - main
 
@@ -39,8 +43,12 @@ jobs:
 
       - name: Terraform plan dev
         working-directory: envs/dev
+<<<<<<< HEAD
         run: terraform plan -var-file=terraform.tfvars -no-color
 
+=======
+        run: terraform plan -no-color
+>>>>>>> origin/main
 
   plan-stage:
     runs-on: ubuntu-latest
@@ -68,8 +76,12 @@ jobs:
 
       - name: Terraform plan stage
         working-directory: envs/stage
+<<<<<<< HEAD
         run: terraform plan -var-file=terraform.tfvars -no-color
 
+=======
+        run: terraform plan -no-color
+>>>>>>> origin/main
 
   plan-prod:
     runs-on: ubuntu-latest
@@ -97,4 +109,8 @@ jobs:
 
       - name: Terraform plan prod
         working-directory: envs/prod
+<<<<<<< HEAD
         run: terraform plan -var-file=terraform.tfvars -no-color
+=======
+        run: terraform plan -no-color
+>>>>>>> origin/main
