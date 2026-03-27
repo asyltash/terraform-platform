@@ -1,6 +1,6 @@
-bucket         = "aisalkyn-terraform-state-12345"
+bucket         = "asyltash-terraform-state-123456"
 key            = "terraform-platform/dev/terraform.tfstate"
-region         = "us-east-2"
+region         = "us-west-1"
 encrypt        = true
 dynamodb_table = "terraform-lock"
 use_lockfile   = true
